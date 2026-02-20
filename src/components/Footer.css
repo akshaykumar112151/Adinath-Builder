@@ -1,0 +1,170 @@
+/* src/Footer.css */
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer a:hover {
+    color: #ff8000;
+    transform: scale(1.1); /* Zoom effect */
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer p,
+.footer a {
+    color: #ccc;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: orange;
+    
+   
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin: 10px 0;
+    
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ccc;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: orange;
+    
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #777;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .newsletter form {
+        align-items: flex-start;
+    }
+
+    .newsletter input[type="email"] {
+        max-width: 100%;
+    }
+
+    .newsletter button {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h3 {
+        
+        font-size: 1.1em;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 0.9em;
+    }
+
+    .social-icons a {
+        font-size: 1.2em;
+    }
+
+    .newsletter input[type="email"] {
+        font-size: 0.9em;
+    }
+
+    .newsletter button {
+        font-size: 0.9em;
+    }
+}
+
+.trip-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  

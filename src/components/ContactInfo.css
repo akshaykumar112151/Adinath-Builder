@@ -1,0 +1,56 @@
+.container-IN {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures items wrap to the next line on smaller screens */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    gap: 25px;
+  }
+  
+  .contact-item {
+    
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 5px 10px 30px rgba(144, 132, 50, 0.452);
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Default to full width on small screens */
+    max-width: 300px; /* Optional: Set a max width for better control */
+    margin: 10px; /* Add margin for spacing between items */
+    
+  }
+  
+  .icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries for larger screens */
+  @media (min-width: 768px) {
+    .contact-item {
+      width: 48%; /* Two items per row */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .contact-item {
+      width: 30%; /* Three items per row */
+    }
+  }
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.6); /* Zoom effect */
+    color: orange; /* Green color */
+  }
+  

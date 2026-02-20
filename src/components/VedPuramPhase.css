@@ -1,0 +1,499 @@
+.tour-details {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #000000;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  @keyframes fadeText {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  .download-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .bounce-effect {
+    display: inline-block;
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  .download-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9800;
+    animation: fadeText 3s ease-in-out infinite;
+  }
+  
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fully covers the container */
+  }
+  
+  .tour-title {
+    margin: 0;
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-align: left; /* Aligns the title to the left */
+  }
+  
+  .tour-info-container {
+    display: flex;
+    flex-direction: row; /* Row layout on larger screens */
+    justify-content: flex-end; /* Aligns icons and labels to the right */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tour-info {
+    display: flex;
+    flex-direction: row; /* Stack SVG and label in a row for larger screens */
+    align-items: center;
+    gap: 20px; /* Space between info items */
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: row; /* Ensure SVG and label are side by side */
+    align-items: center;
+    gap: 15px; /* Space between icon and label */
+    margin-bottom: 15px; /* Space between each info item */
+    /* Ensure all items have consistent styling */
+  }
+  
+
+  .label {
+    text-align: left;
+    font-size: 14px; /* Adjust font size as needed */
+    line-height: 1.4; /* Improve readability */
+  }
+  
+  @media (max-width: 768px) {
+    .tour-info-container {
+      flex-direction: column; /* Stack info items vertically */
+      align-items: flex-start; /* Align to the left for better readability */
+      gap: 30px; /* Increased space between stacked items */
+    }
+  
+    .tour-info {
+      flex-direction: column; /* Stack SVG and label vertically */
+      gap: 15px; /* Increased space between SVG and label */
+    }
+  
+    .info-item {
+      flex-direction: row; /* Keep SVG and label side by side */
+      align-items: center;
+      gap: 15px; /* Increased space between SVG and label */
+      margin-bottom: 20px; /* Increased space between info items */
+    }
+  
+    .label {
+      font-size: 14px; /* Adjust font size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tour-title {
+      font-size: 25px; /* Further adjust font size for very small screens */
+      margin-bottom: 30px; /* Adjusted margin for better spacing */
+
+      
+    }
+  
+    .label {
+      font-size: 15px; /* Further adjust font size for very small screens */
+    }
+  
+    .info-item {
+      gap: 10px; /* Reduced gap between SVG and label for very small screens */
+      margin-bottom: 15px; /* Adjusted margin for better spacing */
+    }
+  
+    .tour-info-container {
+      padding: 10px; /* Adjusted padding for very small screens */
+    }
+  }
+  .include-exclude-wrapper {
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .include-exclude-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  
+  .include-list,
+  .exclude-list {
+    list-style-type: none;
+    padding: 0;
+    color: #787780;
+  }
+  
+  .include-list li,
+  .exclude-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 6px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .include-list li:hover,
+  .exclude-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .include-list li span,
+  .exclude-list li span {
+    margin-right: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .include-exclude-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .include-list,
+    .exclude-list {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .include-list li,
+    .exclude-list li {
+      margin-bottom: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .include-list li,
+    .exclude-list li {
+      font-size: 14px;
+    }
+  
+    .include-list li span,
+    .exclude-list li span {
+      margin-right: 8px;
+    }
+  }
+  .text-box {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .text-box p {
+    color: rgb(67, 46, 46);
+    margin: 0 0 10px;
+  }
+  .O p{
+    color: gray;
+  }
+  /* Container for positioning the form on the right side */
+.form-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Aligns the form to the right */
+  padding: 3rem;
+}
+
+.form-section {
+  max-width: 400px; /* Adjust the width of the form as needed */
+  width: 100%;
+}
+
+/* Form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background: #faf5ee;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1.5px solid #000000;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 1rem;
+  background-color: #7CA24A;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: darkgray;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  color: #7CA24A;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-wrapper {
+    padding: 1rem;
+  }
+
+  .form-section {
+    max-width: 100%;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .submit-btn {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+/* Base styles */
+.overview-contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+ 
+}
+
+.overview-container {
+  
+  padding: 30px;
+  
+  border-radius: 8px;
+}
+
+.contact-form-wrapper {
+  flex: 0.9; /* Reduce the width of the contact form box */
+
+
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .overview-contact-wrapper {
+    flex-direction: column;
+  }
+
+  .overview-container {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add space below */
+  }
+
+  .contact-form-wrapper {
+    margin-left: 0; /* Ensure no space on smaller screens */
+    flex: 1; /* Allow the contact form to take full width on smaller screens */
+  }
+}
+.overview-container p{
+  font-size: 15px;
+  color: grey;
+}
+
+@media (max-width: 768px) {
+  .overview-title {
+    font-size: 20px;
+  }
+
+  .overview-text {
+    font-size: 14px;
+  }
+
+  .overview-container,
+  .contact-form-wrapper {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overview-title {
+    font-size: 18px;
+    
+  }
+
+  .overview-text {
+    font-size: 17px;
+    color: grey;
+  }
+
+  .overview-container,
+  .contact-form-wrapper {
+    padding: 10px;
+  }
+
+  .overview-contact-wrapper {
+    padding: 10px;
+  }
+}
+.texp{
+  font-size: 14px;
+}
+.review-scores-container {
+  
+  padding: 20px;
+}
+
+.review-scores {
+  
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 50px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-scores__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+}
+
+.review-scores__rating {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+
+.review-scores__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.review-scores__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.review-scores__category {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #555;
+}
+
+.review-scores__bar {
+  flex: 3;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-scores__bar-inner {
+  height: 100%;
+  background-color: #8dc63f;
+  border-radius: 5px;
+  width: 0; /* Default to 0 to ensure animation works */
+  transition: width 0.3s ease-in-out;
+}
+
+.review-scores__percentage {
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
+  color: #666;
+}
+
+.left-align-btn {
+  display: block;
+  margin: 0;
+  width: 15%;
+  text-align: left;
+  /* Additional styling for your button */
+}
+.dropdown-icon {
+  transition: transform 0.1s ease; /* Smooth rotation */
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg); /* Rotate icon 180 degrees when open */
+}

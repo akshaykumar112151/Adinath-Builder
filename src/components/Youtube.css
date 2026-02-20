@@ -1,0 +1,163 @@
+.container-Y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    padding: 20px; /* Added padding for smaller screens */
+    box-sizing: border-box; /* Ensures padding is included in height calculation */
+  }
+  
+  .play-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    background: linear-gradient(to right, #FF0000, #CC0000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: shake 1.5s ease-in-out infinite; /* Smooth shake animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and glowing effect */
+  }
+  
+  .play-button:hover {
+    animation: none; /* Stop shake animation on hover */
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 0 20px rgb(217, 255, 0); /* Glowing effect on hover */
+  }
+  
+  .play-button svg {
+    width: 80px;
+    height: 80px;
+    fill: #ff0000;
+    transition: fill 0.3s ease; /* Smooth color transition */
+  }
+  
+  .play-button:hover svg {
+    fill: #ff0000; /* Change icon color on hover */
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Up-and-Down Shake Animation */
+  @keyframes shake {
+    0% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(-8px);
+    }
+    20% {
+      transform: translateY(8px);
+    }
+    30% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translateY(6px);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+    60% {
+      transform: translateY(4px);
+    }
+    70% {
+      transform: translateY(-2px);
+    }
+    80% {
+      transform: translateY(2px);
+    }
+    90% {
+      transform: translateY(1px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .title {
+      font-size: 2.5em;
+    }
+  
+    .subtitle {
+      font-size: 1.5em;
+    }
+  
+    .play-button {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .play-button svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2em;
+    }
+  
+    .subtitle {
+      font-size: 1.2em;
+    }
+  
+    .play-button {
+      width: 150px;
+      height: 100px;
+    }
+  
+    .play-button svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2em;
+    }
+  
+    .subtitle {
+      font-size: 1.7em;
+    }
+  
+    .play-button {
+      width: 150px;
+      height: 100px;
+    }
+  
+    .play-button svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+ .styled-h1 {
+  
+    font-family: "Pacifico", cursive;
+   
+    
+    color: #7ca24a; /* Adjust the color to match the text in the image */
+    font-size: 48px; /* Adjust the size as needed */
+    font-weight: normal; /* Adjust the weight as needed */
+    text-align: center; /* Center the text if needed */
+  }
+  

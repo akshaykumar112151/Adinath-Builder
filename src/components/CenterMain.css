@@ -1,0 +1,138 @@
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* Ensure items stay in one row */
+  padding: 40px;
+  overflow-x: auto; /* Enable horizontal scrolling on smaller screens if needed */
+  border-radius: 3px;
+}
+
+/* Hover effect with glowing background for feature cards */
+.feature-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Add a glowing shadow effect */
+  background-color: #fff; /* Change the background color on hover */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Optional: Slightly increase the image size on hover */
+.feature-card img:hover {
+  transform: scale(1.5); /* Enlarge image on hover */
+  transition: transform 0.3s ease; /* Smooth image scaling */
+}
+
+/* Each card should align horizontally */
+.feature-card {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Image inside each card */
+.feature-card img {
+  width: 60px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Text content inside each card */
+.feature-content {
+  text-align: left;
+}
+
+.feature-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.feature-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsive Breakpoints */
+
+/* For tablets and medium-sized screens */
+@media (max-width: 1024px) {
+  .feature-container {
+    flex-wrap: wrap; /* Cards will stack in multiple rows */
+    justify-content: center;
+  }
+
+  .feature-card {
+    max-width: 100%; /* Cards will stretch to fit the screen width */
+    margin-bottom: 20px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .feature-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  .feature-card {
+    width: 100%; /* Make each card take up full width */
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center; /* Center-align text for mobile */
+    border-color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 15px; /* Add some padding around the card */
+  }
+
+  .feature-card img {
+    width: 65px; /* Resize images for smaller screens */
+    height: 60px;
+    margin-top: 50px; /* Add margin above the image to move it down */
+    margin-bottom: 15px; /* Add space between image and content */
+  }
+
+  .feature-content h2 {
+    font-size: 1.9rem; /* Adjust heading size for mobile */
+  }
+
+  .feature-content p {
+    font-size: 1rem; /* Reduce paragraph font size for mobile readability */
+  }
+}
+.aminities-section {
+  padding: 20px;
+}
+
+.aminities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.aminities-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aminities-image {
+  width: 20%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.aminities-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.aminities-content li {
+  margin-bottom: 6px;
+}

@@ -1,0 +1,31 @@
+/* MapComponent.css */
+.map-container {
+    position: relative;
+    padding-bottom: 50%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f3f3f3;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Media query for devices with max-width of 768px (tablets and mobile) */
+@media (max-width: 768px) {
+    .map-container {
+        padding-bottom: 130%; /* Adjust aspect ratio as needed */
+    }
+}
+
+/* Media query for devices with max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    .map-container {
+        padding-bottom: 130%; /* Further adjust aspect ratio for smaller screens */
+    }
+}

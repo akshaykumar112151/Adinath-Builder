@@ -1,0 +1,164 @@
+.single-project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  opacity: 0; /* Initially, the container is hidden */
+  transform: translateY(50px); /* Initially, the container is slightly below */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+}
+
+.single-project-container.in-view {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Slide up to its normal position */
+}
+
+.image-section {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.text-section p strong {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.view-projects-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-projects-btn:hover {
+  background-color: #0056b3;
+}
+
+.view-projects-btn:focus {
+  outline: none;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .single-project-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image-section,
+  .text-section {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+  }
+
+  .view-projects-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .text-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .text-section p {
+    font-size: 0.8rem;
+  }
+
+  .view-projects-btn {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+}
+.view-projects-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Customize as needed */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none; /* Removes underline */
+  font-weight: bold;
+  animation: bounce 2s infinite;
+  transition: transform 0.2s ease;
+}
+
+.shake-view-projects-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #111, #333);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  animation: shake 0.8s infinite ease-in-out; /* Balanced speed */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff2;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* On hover: stop shake + add glow */
+.shake-view-projects-btn:hover {
+  animation: none;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #000, #222);
+  border-color: #fff5;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}

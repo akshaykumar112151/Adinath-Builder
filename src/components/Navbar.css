@@ -1,0 +1,275 @@
+/* App.css */
+.App {
+  font-family: 'Euclid Circular A' ;
+  text-align: center;
+}
+
+
+.navbar {
+ 
+ 
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Navbar ka color */
+  z-index: 0; /* Navbar ko sabse upar layer par rakhe */
+  /* Aur agar aap chahein toh anya CSS properties jaise ki width, padding, etc. yahaan add kar sakte hain */
+  font-family: 'Euclid Circular A';
+}
+
+
+.call-button {
+  position: absolute;
+  height: 40px;
+  right: 50px; /* Adjust this value as needed */
+  background-color: #000000; /* Your desired background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media(max-width:500px){
+  .call-button {
+    position: sticky;
+    right: 30px; /* Adjust this value as needed */
+    background-color:#000000; /* Your desired background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.call-button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  
+}
+
+.call-button i {
+  margin-right: 5px;
+}
+
+  .call-button:hover {
+    background-color: rgb(42,172,81);
+  }
+  .nav-item{
+    font-size: 16px;
+    align-items: center;
+    justify-content: left;
+    display: inline-flex;
+  }
+  .navbar-brand img{
+  
+    width: 200px;
+    height: auto;
+    
+  }
+  
+ /* Navbar.css */
+.call-button {
+  animation: slideInButton 0.5s ease forwards;
+}
+
+@keyframes slideInButton {
+  from {
+    transform: translateX(500%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Dropdown menu ka background color */
+  box-shadow: 0 4px 6px rgba(4, 255, 196, 0.1);
+  z-index: 1000;
+  top: 110%; /* Dropdown menu ko neeche position karna */
+  left: 0; /* Dropdown menu ko left se align karna */
+}
+
+.nav-item {
+  position: relative; /* Parent element ka position set karna */
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+/* Dropdown Item Styling */
+.dropdown-item {
+  font-size: 14px;
+  
+  color: #000000; /* Dropdown item ka color */
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline;
+  position: relative; /* Add kiya hai */
+}
+
+.dropdown-item {
+  position: relative; /* Ensure proper positioning of pseudo-element */
+}
+
+.dropdown-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Initially set width to 0 */
+  height: 1px; /* Height of the underline */
+  background-color: #603258; /* Color of the underline */
+  transition: width 0.4s ease; /* Add a transition for width */
+}
+
+.dropdown-item:hover::before {
+  width: 100%; /* Expand width to 100% on hover */
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Navbar ka color */
+  z-index: 1000; /* Increased z-index to ensure navbar is on top */
+  /* Rest of your navbar styles */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Dropdown menu ka background color */
+  box-shadow: 0 4px 6px rgba(6, 255, 43, 0.1);
+  z-index: 2000; /* Increased z-index to ensure dropdown is on top of navbar */
+  top: 110%; /* Dropdown menu ko neeche position karna */
+  left: 0; /* Dropdown menu ko left se align karna */
+}
+.navbar {
+  position: fixed; /* Changed from sticky to fixed */
+  top: 0;
+  width: 100%; /* Make sure it covers the full width */
+  background-color: #ffffff; /* Navbar ka color */
+  z-index: 1000; /* Navbar ko sabse upar layer par rakhe */
+  font-family: 'Euclid Circular A';
+}
+/* Navbar ka height ke barabar padding-top main content ke upar add karenge */
+.main-content {
+  padding-top: 70px; /* Yahan 60px ko navbar ki height ke barabar set karein */
+}
+.dropdown-icon {
+  margin-left: 5px; /* Adjust this margin as needed */
+}
+/* Dropdown Icon Styling */
+.dropdown-icon {
+  margin-left: 5px; /* Adjust this margin as needed */
+  color: #603258; /* Color of the dropdown icon */
+  width: 12px; /* Adjust the width as needed */
+  height: 12px; /* Adjust the height as needed */
+}
+/* Navbar.css */
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Dropdown menu ka background color */
+  box-shadow: 0 4px 6px rgba(4, 255, 196, 0.1);
+  z-index: 1000;
+  top: 110%; /* Dropdown menu ko neeche position karna */
+  left: 0; /* Dropdown menu ko left se align karna */
+}
+
+/* Update dropdown behavior for mobile */
+@media (max-width: 768px) {
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-item .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Yahan top ki jagah bottom ko 100% set kiya hai */
+    left: 0;
+    display: none;
+  }
+
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+}
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  font-family: 'Euclid Circular A';
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Rest of your CSS */
+
+/* Navbar.css */
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(4, 255, 196, 0.1);
+  z-index: 1000;
+  top: 110%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Update dropdown behavior for mobile */
+@media (max-width: 768px) {
+  .nav-item .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+  }
+
+  .nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* Rest of your CSS */
+@media (max-width: 1032px) {
+  .navbar {
+    background-color: #f8f9fa; /* Adjust background color */
+    
+  }
+
+  .nav-item {
+    font-size: 15px; /* Adjust font size */
+  }
+
+  .call-button {
+    right: -0.1px; /* Adjust position */
+    padding: 4px 5px; /* Adjust padding */
+  }
+
+  .dropdown-menu {
+    top: 100%; /* Adjust position */
+  }
+}

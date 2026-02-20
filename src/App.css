@@ -1,0 +1,353 @@
+.App {
+  
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-brand span {
+  animation: slideIn 0.5s ease forwards;
+}
+@keyframes rotateIn {
+  from {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.navbar-brand span {
+  display: inline-block;
+  animation: rotateIn 2s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn h1,
+.fadeIn p {
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(93, 55, 55);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.rotate-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate-icon:hover {
+  transform: rotate(180deg);
+}
+/* Navbar.css */
+
+/* Import the font-face definition */
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('https://sdk.breeze.in/gallery/fonts/EuclidCircularA-Medium.ttf') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Apply the font family to the navbar */
+
+.login-img{
+  width: 30px;
+}
+@keyframes menAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes womenAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.men-link {
+  animation: menAnimation 0.5s forwards;
+}
+
+.women-link {
+  animation: womenAnimation 0.5s forwards;
+}
+.login-img {
+  animation: loginAnimation 1s ease-in-out forwards;
+}
+
+@keyframes loginAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Footer.css */
+.footer {
+ 
+  background-color:#603258;
+  color: #fff;
+  padding: 30px 0;
+}
+.footer h5{
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-family: 'Euclid Circular A';
+
+}
+
+.footer-text {
+  display: flex;
+  font-size: 14px;
+  color: #ffffff; /* Black color for footer text */
+  font-family: 'Euclid Circular A';
+}
+
+
+.footer-links {
+  padding-left: 0;
+}
+
+.footer-link {
+  display: flex;
+  color: #ffffff; /* Black color for links */
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff; /* Black color for underline */
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff9100; /* Golden yellow color */
+}
+
+.footer-link:hover::after {
+  width: 19%;
+}
+
+.footer-social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social-icons li:last-child {
+  margin-right: 0;
+}
+
+.footer-social-icons a {
+  color: #fffafa; /* Black color for social media icons */
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #ffffff; /* Golden yellow color */
+}
+
+.footer-divider {
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.col-md-4{
+  
+  font-family: 'Euclid Circular A' ;
+}
+.col-md-4 h5{
+  font-size: 25px;
+  
+  font-family: 'Euclid Circular A' ;
+}
+.hello p{
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Euclid Circular A' ;
+  font-size: 12px;
+  
+  
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-error {
+  animation: shake 0.5s;
+}
+.small-banner img{
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+.animated-text {
+  animation: fadeIn 1s ease-out; /* Fade in animation */
+}
+
+.animated-text-item {
+  animation: slideIn 0.5s ease-out; /* Slide in animation */
+}
+
+.animated-text-item:hover {
+  animation: shake 0.5s ease-in-out; /* Hover animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animated-text-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+.animated-text-item:hover {
+  transform: translateX(10px); /* Change the value as per your preference */
+}
+

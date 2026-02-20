@@ -1,0 +1,160 @@
+.container {
+    margin-top: 10px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content h1{
+    color: #7CA24A;
+  }
+  .btn {
+    width: 30%;
+    background-color:#7CA24A;
+    color: white;
+    border: none;
+   
+    border-radius: 5px;
+   
+    transition: background-color 0.3s ease;
+  }
+  
+ /* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 40%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn {
+    width: 95%; /* Adjust this value as needed */
+  }
+}
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+  .yellow-line {
+    height: 1px;
+    border-radius: 10px;
+    width: 115px; /* Adjust width as needed */
+    background-color: #f4b959;
+    margin: 1 auto;
+    border-width: 2px 0 0;
+    border-color: #f4b959;
+}
+
+.card-A {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); /* Adjust the shadow values as needed */
+  transition: 0.3s;
+  border-radius: 10px; /* Optional: Add some border radius for a nicer look */
+}
+
+.card-A:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1); /* Optional: Add a bigger shadow on hover */
+}
+.card-A {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-A img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-A:hover img {
+  transform: scale(1.03);
+}
+.card-A h4{
+  color: #232324;
+  font-size: 18px;
+}
+.card-A p{
+  color: #333333;
+  font-size: 15px;
+}
+.carousel-image {
+  width: 100%;
+  height: 300px; /* Default height for larger screens */
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 250px; /* Smaller height for mobile devices */
+  }
+}
+.progress-bar {
+  height: 20px;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.progress-bar-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.progress-bar-percentage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* Ensure cards are responsive for Asus Zenbook Fold */
+@media screen and (max-width: 1024px) {
+  .container-A {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-lg-4,
+  .col-md-6 {
+    width: 100%; /* Make each card take full width */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-A {
+    margin-bottom: 15px; /* Add some space between cards */
+  }
+}
+.glow-image img:hover {
+  box-shadow: 0 0 15px 10px rgba(255, 204, 0, 0.7); /* Yellow glow effect */
+  transition: box-shadow 0.3s ease-in-out;
+}

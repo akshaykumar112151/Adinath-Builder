@@ -1,0 +1,61 @@
+/* src/VideoPage.css */
+.video-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .video-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .video {
+    flex: 1;
+    margin: 10px;
+    min-width: 300px;
+    height: 215px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .video-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .video {
+      min-width: 100%;
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  /* Animation CSS */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(1000px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-20000px);
+    }
+  }
+  
+  .video.animate {
+    opacity: 1;
+    animation: fadeIn 2s ease-out;
+  }
+  

@@ -1,0 +1,10 @@
+.carousel-image {
+    height: 570px;
+    width: 100%;
+    object-fit: cover; /* Maintains aspect ratio */
+  }
+  @media (max-width: 768px) {
+    .carousel-image {
+      height: 250px; /* Smaller height for mobile devices */
+    }
+  }

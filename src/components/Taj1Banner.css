@@ -1,0 +1,10 @@
+.style-T p{
+  
+    font-family: "Pacifico", cursive;
+   
+    
+    color: #7ca24a; /* Adjust the color to match the text in the image */
+    font-size: 20px; /* Adjust the size as needed */
+    font-weight: normal; /* Adjust the weight as needed */
+    text-align: center; /* Center the text if needed */
+  }

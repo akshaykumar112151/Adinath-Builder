@@ -1,0 +1,30 @@
+/* StatBox.css */
+.stat-box-A {
+    display: flex;
+    justify-content: space-between;
+    background-color: #541936;
+    padding: 10px;
+    
+  }
+  
+  .stat-box-A .left,
+  .stat-box-A .center,
+  .stat-box-A .right {
+    text-align: center;
+  
+    color: white;
+    flex: 1;
+  }
+  
+  .stat-box-A span {
+    display: block;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  
+  .stat-box-A span:last-child {
+    font-size: 14px;
+  }
+  

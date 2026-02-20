@@ -1,0 +1,31 @@
+.container-F {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 15px;
+    max-width: 330px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container */
+    
+
+}
+
+
+.item {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.card-body h3{
+    font-size: 23px;
+    font-weight: 600;
+}
+.style-F h6 {
+  
+    font-family: "Pacifico", cursive;
+   
+    
+    color: #000000; /* Adjust the color to match the text in the image */
+    font-size: 30px; /* Adjust the size as needed */
+    font-weight: normal; /* Adjust the weight as needed */
+    text-align: center; /* Center the text if needed */
+  }

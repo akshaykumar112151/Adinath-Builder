@@ -1,0 +1,76 @@
+.tour-container {
+    position: relative; /* Position relative to contain the pseudo-element */
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* Background color */
+    /* Background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-blend-mode: overlay; /* Blend the background color and image */
+    text-align: center; /* Center text alignment on mobile */
+    height: 40vh;
+    overflow: hidden; /* Ensure child elements do not overflow */
+}
+
+.tour-container::before {
+    content: ""; /* Empty content for pseudo-element */
+    position: absolute; /* Position absolute to cover the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark shadow with 50% opacity */
+    z-index: 1; /* Place the shadow above the background image */
+}
+
+.tour-container > * {
+    position: relative; /* Ensure child elements are above the shadow */
+    z-index: 2;
+}
+
+h1 {
+    font-size: 36px; /* Smaller font size on mobile */
+    margin: 10px 0; /* Adjust margin for mobile */
+}
+
+.button {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .tour-container {
+        flex-direction: row; /* Arrange items horizontally on larger screens */
+        justify-content: space-between; /* Space items between text and button */
+        align-items: center; /* Align items vertically */
+        text-align: left; /* Align text to the left on larger screens */
+        padding: 20px 40px; /* Adjust padding for larger screens */
+    }
+
+    h1 {
+        font-size: 48px; /* Larger font size on larger screens */
+        margin: 0; /* Remove margin for larger screens */
+    }
+
+    .button {
+        margin-left: auto; /* Push button to the right side */
+    }
+}
+
+@media (max-width: 576px) {
+    .tour-container {
+        padding: 10px; /* Reduce padding on very small screens */
+    }
+
+    .button {
+        padding: 8px 16px; /* Adjust button size for smaller screens */
+    }
+}

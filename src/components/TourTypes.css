@@ -1,0 +1,149 @@
+.container-TU {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .find-the-best-tour {
+    font-size: 1.2rem;
+    color: #7CA24A;
+    margin-bottom: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .tour-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .tour-types {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .tour-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 2px 4px 4px 4px #676363;;
+    width: 200px;
+    perspective: 1000px; /* Add perspective */
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width:  100px;
+    height: 100px;
+    perspective: 1000px; /* Add perspective */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(200deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+  
+  .tour-type p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  /* Ensure images and text fit well on smaller screens */
+  @media (max-width: 480px) {
+    .tour-type {
+      width: 350px;
+      padding: 50px;
+    }
+  
+    .flip-card {
+      width: 100px;
+      height: 80px;
+    }
+  
+    .title h1 {
+      font-size: 1.8rem;
+    }
+  
+    .find-the-best-tour {
+      font-size: 1rem;
+    }
+  }
+ 
+  @media (max-width: 1032px) and (min-width: 769px) {
+    .container-TU {
+      padding: 1.5rem;
+    }
+  
+    .tour-types {
+      gap: 1.5rem;
+    }
+  
+    .tour-type {
+      width: 170px;
+      padding: 20px;
+    }
+  
+    .title h1 {
+      font-size: 2.2rem;
+    }
+  
+    .find-the-best-tour {
+      font-size: 1.1rem;
+    }
+  
+    
+  }
+  
+    
+  
+  
+  
