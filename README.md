@@ -26,7 +26,7 @@ npm start
 This project was developed during my internship as a Frontend Developer.
 
 ## Live Demo
-https://your-live-link.netlify.app
+https://adinath-builder.netlify.app
 
 ## Folder Structure
 ```text
